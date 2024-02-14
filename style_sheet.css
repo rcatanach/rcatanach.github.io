@@ -341,6 +341,26 @@ nav ul li a:hover {
     text-align: right;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .prof-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .prof-container .image,
+    .prof-container .letters {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .prof-container .image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 /* Desktop styles */
 @media (min-width: 768px) {
