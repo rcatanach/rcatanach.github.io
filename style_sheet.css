@@ -384,6 +384,20 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-info {
+        padding: 0;
+    }
+    
+    .linkedin {
+        padding: 0;
+    }
+    
+    .profile-picture {
+        width: 150px;
+    }
+}
+
 
 
 /* Desktop styles */
