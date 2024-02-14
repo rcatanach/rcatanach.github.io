@@ -346,6 +346,43 @@ nav ul li a:hover {
     text-align: right;
 }
 
+/*---------Contact----------*/
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    background-color: white;
+}
+
+.linkedin {
+    text-align: center;
+    background-color: white; /* Add this line */
+}
+
+.linkedin a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
 
