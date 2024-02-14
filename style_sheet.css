@@ -359,6 +359,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    text-align: center; /* Add this line */
 }
 
 .contact-info {
@@ -403,6 +404,7 @@ nav ul li a:hover {
         width: 150px;
     }
 }
+
 
 
 
