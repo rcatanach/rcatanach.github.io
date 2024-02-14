@@ -265,6 +265,11 @@ nav ul li a:hover {
 }
 
 /*---------Professional----------*/
+.centered-link {
+    text-align: center;
+    font-size: 20px;
+}
+
 .prof {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
