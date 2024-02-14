@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renee Catanach - Personal Website</title>
+    <link rel="stylesheet" href="style_sheet.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family:'Papyrus', cursive;
+            background-image: url('studioghibli.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url('studioghibli.jpg'); /* Add transparency directly to the background image */
+        }
+    </style>
 </head>
-
 <body>
+<header>
+    <img src="flower-left.jpg" alt="Left Flower" class="flower left-flower">
+    <h1>The Life of Renee</h1>
+    <img src="flower-right.jpg" alt="Right Flower" class="flower right-flower">
+    <nav> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myloves.html">Loves</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="professional.html">Professional</a></li>
+            <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <h1>About me!</h1>
-    <p>My name is Renee Catanach, and I am a first years masters student. I love to travel, hang out with my friends, and I enjoy trying new things.</p>
+<main>
+    <section class="landing"> 
+        <img src="Renee.jpeg" alt="Your Picture" class="profile-picture">
+        <div class="speech-bubble">
+            <img src="speech_bubble.jpg" alt="Speech Bubble" class="speech-img">
+            <p class="speech-text">My name is Renee and I am a masters student! A little bit about me, I love traveling, trying new things and meeting new people. And this website is going to show you a little bit about me: My hobbies, my passions, and all the things I love. Enjoy!</p>
+        </div>
+    </section>
+    <section class="photo-grid">
+        <div class="photo-item">
+            <img src="baby2.jpg" alt="Photo 1">
+            <p>Me when I was baby, so innocent</p>
+        </div>
+        <div class="photo-item">
+            <img src="young.jpg" alt="Photo 2">
+            <p>This is the era when I wanted to be an astronaut</p>
+        </div>
+        <div class="photo-item">
+            <img src="highschool.jpeg" alt="Photo 3">
+            <p>Graduated highschool</p>
+        </div>
+        <div class="photo-item">
+            <img src="college.jpg" alt="Photo 4">
+            <p>Graduated college, and sadly went back</p>
+        </div>
+      </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Renee Catanach background photo from https://i.pinimg.com/736x/58/96/be/5896be56f0e7ee231ba1d74c91fedff2.jpg</p>
+</footer>
 
 </body>
-
 </html>
