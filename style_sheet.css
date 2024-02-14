@@ -299,6 +299,12 @@ nav ul li a:hover {
     margin-left: 0.2%;
 }
 
+.prof-container .image iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .prof-container .image img {
     max-width: 100%;
     height: auto;
