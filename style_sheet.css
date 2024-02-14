@@ -291,7 +291,7 @@ nav ul li a:hover {
 .prof-container .letters {
     text-align: center;
     flex: 0 0 49%;
-    margin-left: 2%;
+    margin-left: 0.2%;
 }
 
 .prof-container .image img {
@@ -341,25 +341,7 @@ nav ul li a:hover {
     text-align: right;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    .prof-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .prof-container .image,
-    .prof-container .letters {
-        flex: 0 0 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .prof-container .image img {
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 
 /* Desktop styles */
