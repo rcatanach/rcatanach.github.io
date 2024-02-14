@@ -1,3 +1,4 @@
+/*Describe font for all pictures and background info*/
 body {
     font-family: 'Papyrus', cursive;
     margin: 0;
@@ -81,7 +82,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.profile-picture {
+.profile-picture { /*Profile picture settings*/
     width: 300px;
     height: auto;
     border-radius: 50%;
@@ -105,7 +106,7 @@ nav ul li a:hover {
 .right-flower {
     right: 10px;
 }
-
+/*Photo grid, for bottom of index page*/
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -127,7 +128,7 @@ nav ul li a:hover {
     object-position: center;
     transition: transform .3s ease-in-out;
 }
-
+/*hidden text on top of photos*/
 .photo-item p {
     position: absolute;
     bottom: 0;
@@ -185,8 +186,9 @@ nav ul li a:hover {
         max-width: 100%; /* Set max-width to 100% for mobile */
     }
 }
-
+/*-------------------*/
 /*--------My Loves-----------*/
+/*class for collage photo grid*/
 .collage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -195,7 +197,7 @@ nav ul li a:hover {
     max-width: 1000px;
     padding: 20px 0;
 }
-  
+/*border for photo grid*/
   .item {
     background-color: #fff;
     border-radius: 10px;
@@ -207,7 +209,7 @@ nav ul li a:hover {
   }
   
   .item img {
-    max-width: 100%;
+    max-width: 100%; /*photo size*/
     height: auto;
   }
   
@@ -229,7 +231,9 @@ nav ul li a:hover {
   .item:hover .text {
     opacity: 1;
   }
+/*-------------------*/
 /*---------Hobbies----------*/
+/*grid for gifs*/
 .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -255,14 +259,14 @@ nav ul li a:hover {
     font-size: 16px;
     line-height: 1.5;
 }
-
+/*redirect to bring user to links when they click on gifs*/
 .gif-redirect {
     width: 200px;
     /* set desired width */
     height: auto;
     /* maintain aspect ratio */
 }
-
+/*-------------------*/
 /*---------Professional----------*/
 .centered-link {
     text-align: center;
@@ -330,7 +334,7 @@ nav ul li a:hover {
     margin-bottom: 30px;
     text-align: left;
 }
-
+/* make rows alternate direction of text and photo*/
 .row-1 .image,
 .row-3 .image {
     text-align: right;
@@ -350,7 +354,7 @@ nav ul li a:hover {
 .row-4 .letters {
     text-align: right;
 }
-
+/*-------------------*/
 /*---------Contact----------*/
 .contact {
     display: flex;
@@ -360,7 +364,7 @@ nav ul li a:hover {
     margin-top: 50px;
     text-align: center; /* Add this line */
 }
-
+/*align contact info*/
 .contact-info {
     text-align: center;
     margin-bottom: 10px;
@@ -382,7 +386,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: #333;
 }
-
+/*edit contact photo*/
 .profile-picture {
     width: 200px;
     height: auto;
@@ -403,8 +407,6 @@ nav ul li a:hover {
         width: 150px;
     }
 }
-
-
 
 
 /* Desktop styles */
