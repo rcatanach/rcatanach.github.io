@@ -1,4 +1,4 @@
-/*Describe font for all pictures and background info*/
+/* General styles */
 body {
     font-family: 'Papyrus', cursive;
     margin: 0;
@@ -9,7 +9,11 @@ body {
     background-position: center; /* Center the background image */
     background-attachment: fixed; /* Fix background image position */
 }
-
+@media (max-width: 768px) {
+    .background-photo {
+        background-size: contain;
+    }
+}
 /* Header styles */
 header {
     background-color: #ffd3b6;
