@@ -16,6 +16,7 @@ header {
     color: #698474;
     padding: 25px;
     text-align: center; /* Center align the header content */
+    position: relative; /* Set position to relative */
 }
 
 /* Navigation styles */
@@ -40,6 +41,8 @@ nav ul li a {
 nav {
     background-color: #ffaaa5; /* Light coral */
     padding: 15px 0; /* Increased padding for thicker navbar */
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Set z-index to 1 to ensure the navbar is above the flowers */
 }
 
 nav ul {
@@ -65,57 +68,35 @@ nav ul li a:hover {
 }
 /*-------------------*/
 /* Landing page styles */
-.landing {
+.profile-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 130vh;
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* Profile picture style */
+.profile-section p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .profile-picture {
-    width: 300px; /* Set the desired width */
-    height: auto; /* Let the height adjust automatically */
-    position: absolute; /* Position the image absolutely */
-    left: 50%; /* Center the image horizontally */
-    transform: translate(-50%, -50%); /* Move the image up and left by half of its width and height */
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
-
-/* Speech bubble styles */
-.speech-bubble {
-    display: inline-block;
-    vertical-align: middle; /* Align the speech bubble with the image */
-    position: relative;
-}
-
-.speech-img {
-    position: absolute; /* Position the speech bubble image */
-    top: 100%;
-    right: 80px; /* Adjust the distance from the right */
-    transform: translateY(-90%);
-    width: 550px; /* Set the desired width of the speech bubble */
-    height: auto; /* Let the height adjust automatically */
-}
-
-.speech-text {
-    position: absolute; /* Position the text on top of the speech bubble image */
-    top: -300px;
-    right: 225px; /* Adjust the distance from the right */
-    width: 300px; /* Set the width of the text */
-    font-size: 15px; /* Adjust the font size */
-    color: #000; /* Set the color of the text */
-}
-
 /* Flower styles */
 .flower {
     filter: brightness(0) saturate(100%) invert(50%) sepia(23%) saturate(100%) hue-rotate(328deg) brightness(101%) contrast(98%);
     width: 200px;
     height: auto;
     position: absolute;
-    top: 15%;
+    top: 20%; /* Adjust the top margin to move the flowers down */
     transform: translateY(-50%);
+    z-index: 0; /* Set z-index to 0 to ensure the flowers are behind the navbar */
 }
 
 .left-flower {
@@ -130,7 +111,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-    margin-top: -350px;
+    margin-top: 50px; /* Adjust the margin-top value */
 }
 
 .photo-item {
